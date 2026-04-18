@@ -6,7 +6,8 @@
 
 
 <!-- Quote -->
-<p align="center">Estudiante de ingenieria civil informatica, empece a programar a los 16 años.
+<p align="center">Estudiante de ingenieria civil informatica.
+Aprendi a programar antes de la IA.
   
   <!-- Social Network -->
 <h1 align="center">
