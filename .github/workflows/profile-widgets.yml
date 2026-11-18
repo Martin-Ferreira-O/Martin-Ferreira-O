@@ -1,0 +1,47 @@
+name: Refresh profile widgets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 9 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/profile_widgets.py
+      - .github/workflows/profile-widgets.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-widgets
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Generate widgets
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/profile_widgets.py --username "$PROFILE_USERNAME"
+      - name: Commit updated widgets
+        run: |
+          git add -- assets/widgets
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh profile widgets'
+          git push

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="240" viewBox="0 0 420 240" role="img" aria-labelledby="title description">
+<title id="title">My work on GitHub</title>
+<desc id="description">Repositories: 19; Stars: 23; Languages: 11</desc>
+<rect x=".5" y=".5" width="419" height="239" rx="14" fill="#151B23" stroke="#3D444D"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="24" y="30" font-size="12" fill="#79B8FF" font-weight="600" text-anchor="start">GITHUB / OPEN SOURCE</text>
+<text x="24" y="62" font-size="23" fill="#F0F6FC" font-weight="600" text-anchor="start">My work on GitHub</text>
+<path d="M24 80h372" stroke="#3D444D"/>
+<text x="24" y="133" font-size="42" fill="#79B8FF" font-weight="600" text-anchor="start">19</text>
+<text x="24" y="160" font-size="15" fill="#ADBAC7" font-weight="400" text-anchor="start">Repositories</text>
+<text x="164" y="133" font-size="42" fill="#B4A1FF" font-weight="600" text-anchor="start">23</text>
+<text x="164" y="160" font-size="15" fill="#ADBAC7" font-weight="400" text-anchor="start">Stars</text>
+<text x="292" y="133" font-size="42" fill="#7EE7C0" font-weight="600" text-anchor="start">11</text>
+<text x="292" y="160" font-size="15" fill="#ADBAC7" font-weight="400" text-anchor="start">Languages</text>
+<text x="24" y="197" font-size="13" fill="#ADBAC7" font-weight="400" text-anchor="start">Own public repositories only · No forks</text>
+<text x="24" y="221" font-size="12" fill="#ADBAC7" font-weight="400" text-anchor="start">Updated 2026-11-17</text>
+<circle cx="388" cy="217" r="4" fill="#7EE7C0"/>
+</g>
+</svg>
